@@ -1,0 +1,11 @@
+# -*- coding: utf-8
+import pandas as pd
+
+def file_read():
+    cjxx = pd.read_csv('/Users/bonniebook/Desktop/chusaishuju/bx/shuju/bks_cjxx_out.xlt',
+                       nrows = 10000,sep = ',',encoding = 'ISO-8859-1',header = 0)
+    print(cjxx)
+def main():
+    file_read()
+main()
+    
